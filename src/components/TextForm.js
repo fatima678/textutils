@@ -29,9 +29,9 @@ const [text, setText] = useState("Enter the text here");
   return (
     <>
     <div className='container'>
-    <h1>{props.heading}</h1>
+    <h2>{props.heading}</h2>
         <div className="mb-3">
-           <textarea className="form-control" value={text} id="myBox" rows="8" onChange={handleOnChange}></textarea>
+           <textarea className="form-control" value={text}   id="myBox" rows="8" onChange={handleOnChange}></textarea>
         </div>
         <button className='btn btn-primary mx-1' onClick={handleUpClick}> Convert to Uppercase</button>
         <button className='btn btn-primary mx-1' onClick={handleloClick}> Convert to Lowercase</button>
