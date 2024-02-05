@@ -3,7 +3,8 @@ import React, { useState } from 'react'
 export default function About(props) {
   let myStyle={
     color:props.mode === 'dark'? 'white': 'black',
-    backgroundColor: props.mode === 'dark'? 'black': 'white',
+    backgroundColor: props.mode === 'dark'? 'rgb(36 74 104)': 'white',
+   
   }
   
     // const [myStyle, setMyStyle]= useState({

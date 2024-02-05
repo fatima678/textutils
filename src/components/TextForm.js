@@ -38,10 +38,10 @@ const [text, setText] = useState("Enter the text here");
         <div className="mb-3">
            <textarea className="form-control" value={text}  style={{backgroundColor: props.mode==='dark'?'grey': 'white'}} id="myBox" rows="8" onChange={handleOnChange}></textarea>
         </div>
-        <button className='btn btn-primary mx-1 my-1' onClick={handleUpClick}> Convert to Uppercase</button>
-        <button className='btn btn-primary mx-1 my-1' onClick={handleloClick}> Convert to Lowercase</button>
-        <button className='btn btn-primary mx-1 my-1' onClick={handleClearText}> Clear text</button>
-        <button className='btn btn-primary mx-1 my-1' onClick={handleCopy} >  Copy text</button>
+        <button disabled={text.length===0} className='btn btn-primary mx-1 my-1' onClick={handleUpClick}> Convert to Uppercase</button>
+        <button  disabled={text.length===0}className='btn btn-primary mx-1 my-1' onClick={handleloClick}> Convert to Lowercase</button>
+        <button disabled={text.length===0} className='btn btn-primary mx-1 my-1' onClick={handleClearText}> Clear text</button>
+        <button disabled={text.length===0} className='btn btn-primary mx-1 my-1' onClick={handleCopy} >  Copy text</button>
         
     </div>
 
