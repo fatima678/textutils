@@ -102,7 +102,7 @@ function App() {
   const toggleMode = () => {
     if (mode === 'light') {
       setMode('dark');
-      document.body.style.backgroundColor = 'grey';
+      document.body.style.backgroundColor = '#042457';
       showAlert('Dark mode has been enabled', 'success');
       document.title = 'TextUtils - Dark mode';
     } else {
@@ -120,8 +120,10 @@ function App() {
 
       <div className='container my-3'>
           <Routes>
-            <Route path='about' element={<About />} />
-            <Route path='/' element={<TextForm showAlert={showAlert} heading='Enter the text to analyze below' />} />
+             {/* users---> component 1
+            usersHome --- component 2  with exact word you can go to the exact url  */}
+            <Route  exact path='about' element={<About />} />
+            <Route exact  path='/' element={<TextForm showAlert={showAlert} heading='Enter the text to analyze below' />} />
           </Routes>
        
       </div>
